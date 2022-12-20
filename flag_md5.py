@@ -3,9 +3,7 @@
 # script para pasar a formato de entrega flag md5 de Atenea
 
 import hashlib
-
 import sys
-
 import pyperclip
 
 if len(sys.argv) == 2:
