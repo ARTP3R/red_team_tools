@@ -1,0 +1,28 @@
+#!/bin/bash
+
+# Sencillo script para iniciar el terminal como la película The Matrix.
+# Añadir la siguientes función y llamada a .bashrc o .zshrc 
+
+enter_matrix(){
+	local matrix_text_delay=0.025
+	local matrix_green_text="$(tput bold)\e[32m"
+	local matrix_reset_text="\e[0m$(tput sgr0)"
+	local matrix_date=$(date +'%d-%m-%y')
+	local matrix_time=$(date +'%H:%M:%S')
+	local matrix_line1="Call trans opt: received $matrix_date $matrix_time REC:Log>"
+	local matrix_line2="Trace program: running"
+	sleep 2
+	for ((i = 0; i < ${#matrix_line1}; i++)); do
+	    echo -en "${matrix_green_text}${matrix_line1:$i:1}${matrix_reset_text}"
+	    sleep $matrix_text_delay
+	done
+	echo
+	sleep 2
+	for ((i = 0; i < ${#matrix_line2}; i++)); do
+	    echo -en "${matrix_green_text}${matrix_line2:$i:1}${matrix_reset_text}"
+	    sleep $matrix_text_delay
+	done
+	echo
+	sleep 2
+}
+enter_matrix
