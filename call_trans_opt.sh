@@ -17,7 +17,7 @@ enter_matrix(){
 	    echo -en "${matrix_green_text}${matrix_line1:$i:1}${matrix_reset_text}"
 	    sleep $matrix_text_delay
 	done
-	sleep 2
+	sleep 3
 	clear
 	sleep 1
 	for ((i = 0; i < ${#matrix_line2}; i++)); do
