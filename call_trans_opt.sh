@@ -16,13 +16,15 @@ enter_matrix(){
 	    echo -en "${matrix_green_text}${matrix_line1:$i:1}${matrix_reset_text}"
 	    sleep $matrix_text_delay
 	done
-	echo
 	sleep 2
+	clear
 	for ((i = 0; i < ${#matrix_line2}; i++)); do
 	    echo -en "${matrix_green_text}${matrix_line2:$i:1}${matrix_reset_text}"
 	    sleep $matrix_text_delay
 	done
-	echo
 	sleep 2
+	clear
+
 }
 enter_matrix
+
