@@ -28,7 +28,6 @@ enter_matrix(){
 	sleep 2
 	clear
 	echo
-
 }
 enter_matrix
 
