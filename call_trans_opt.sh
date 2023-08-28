@@ -12,22 +12,19 @@ enter_matrix(){
 	local matrix_line1="Call trans opt: received $matrix_date $matrix_time REC:Log>"
 	local matrix_line2="Trace program: running"
 	clear
-	echo
-	sleep 2
+	sleep 3
 	for ((i = 0; i < ${#matrix_line1}; i++)); do
 	    echo -en "${matrix_green_text}${matrix_line1:$i:1}${matrix_reset_text}"
 	    sleep $matrix_text_delay
 	done
 	sleep 2
 	clear
-	echo
+	sleep 1
 	for ((i = 0; i < ${#matrix_line2}; i++)); do
 	    echo -en "${matrix_green_text}${matrix_line2:$i:1}${matrix_reset_text}"
 	    sleep $matrix_text_delay
 	done
-	sleep 2
+	sleep 3
 	clear
-	echo
 }
 enter_matrix
-
