@@ -1,7 +1,7 @@
 #!/bin/bash
 
-# Sencillo script para iniciar el terminal como la película The Matrix.
-# Añadir la siguientes función y llamada a .bashrc o .zshrc 
+# Simple script to start shell like The Matrix movie. By artp3r.
+# Add next function and call to .bashrc or .zshrc 
 
 enter_matrix(){
 	local matrix_text_delay=0.025
