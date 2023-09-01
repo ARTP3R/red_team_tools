@@ -32,7 +32,6 @@ enter_matrix(){
 	    echo -en "${matrix_line3:$i:1}"
 	    sleep $matrix_text_delay
 	done
-	sleep 3
 	clear
 }
 enter_matrix
