@@ -15,8 +15,9 @@ sleep 3
 echo chfn -f $name $name
 chfn -f $name $name
 sleep 3
-echo dpkg-reconfigure keyboard-configuration
-dpkg-reconfigure keyboard-configuration
+echo -e "# Generado por script artp3r\nLANG=es_ES.UTF-8\nLC_ALL=es_ES.UTF-8" | sudo tee /etc/default/locale > /dev/null
+#echo dpkg-reconfigure keyboard-configuration
+#dpkg-reconfigure keyboard-configuration
 sleep 3
 # Otros cambios:
 # Nombre máquina en /etc/hosts y /etc/hostname
